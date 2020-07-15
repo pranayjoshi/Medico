@@ -1,2 +1,1 @@
-# Medico
-Medico is a medical tool
+A software that recognize medical terms
