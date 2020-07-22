@@ -1,5 +1,4 @@
 import json
-import file_path as f_p
 class beautify:
     def __init__(self, input_location, output_location):
         self.input_location = input_location

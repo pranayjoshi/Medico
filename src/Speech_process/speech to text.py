@@ -71,7 +71,7 @@ class run_utils:
             data = json.load(file)
         results_loc = data["results"]
         self.results_loc = results_loc
-
+ 
     #runs the Voice_recognize function
     def run_Vr(self):
         wait_time,duration=5,0.5
