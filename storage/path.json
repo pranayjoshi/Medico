@@ -2,5 +2,6 @@
     "data": "./data/data.csv",
     "snomed_json": "./data/snomed_data.json",
     "results": "./storage/results.txt",
-    "snomed_raw": "./data/snomed-sample-data-raw.json"
+    "snomed_raw": "./data/snomed-sample-data-raw.json",
+    "tokenized_data": "./data/tokenized_data.csv"
 }
