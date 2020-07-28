@@ -6,8 +6,8 @@ class processing:
         pass
     def extract_file_paths(self):
         file_path = fp
-        self.snomed_json_loc = file_path.run("snomed_json")
-        self.data_loc = file_path.run("data")
+        self.snomed_json_loc = fp.run("snomed_json")
+        self.data_loc = fp.run("initial_data")
     def create_dataframe(self):
         dataframe = pd.read_json(self.snomed_json_loc)
         self.df = dataframe
