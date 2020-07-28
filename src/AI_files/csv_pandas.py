@@ -10,5 +10,6 @@ def csv_to_dataframe(csv_loc):
     csv = readcsv(csv_loc)
     dataframe = pd.DataFrame(csv)
     return dataframe
-
+def df_to_csv(dataframe, location):
+    dataframe.to_csv(location)
 
