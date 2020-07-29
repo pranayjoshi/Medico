@@ -3,5 +3,7 @@
     "snomed_json": "./data/snomed_data.json",
     "results": "./storage/results.txt",
     "snomed_raw": "./data/snomed-sample-data-raw.json",
-    "tokenized_data": "./data/tokenized_data.csv"
+    "tokenized_data": "./data/tokenized_data.csv",
+    "initial_data": "./data/initial_data.csv",
+    "main_data": "./data/main_data.csv"
 }
