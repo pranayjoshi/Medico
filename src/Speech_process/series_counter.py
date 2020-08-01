@@ -1,4 +1,3 @@
-import json
 import results_checker as rc
 import filepath as f_p
 #This will extract the first word from a line
