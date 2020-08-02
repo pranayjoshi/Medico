@@ -7,10 +7,13 @@ def read_csv(csv_loc):
 def dataframe(csv):
     data_frame = pd.DataFrame(csv)
     return data_frame
-def get_file_path():
+def get_final_file_path():
     data_loc = fp.run("initial_data")
     return data_loc
-def run():
-    csv_loc = get_file_path()
+def get_initial_file_path():
+    data_loc = fp.run("initial_data")
+    return data_loc
+def run(data_loc):
+    csv_loc = data_loc
     csv = read_csv(csv_loc)
     return dataframe(csv)
