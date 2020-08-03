@@ -1,25 +1,33 @@
 from spacy.lang.en.stop_words import STOP_WORDS
 from spacy.lang.en import English
+import scispacy
+import spacy
 import get_data
+import filepath as fp
 def stop_words_tokenizer(feature_list):
-    nlp = English()
+    nlp = spacy.load("en_core_sci_sm")
     filtered_sentence=[]
     for line in feature_list:
-        sentence = ""
         doc = nlp(line)
-        for word in doc:
-            if word.is_stop==False:
-                sentence = sentence + " " + str(word)
+        entity = doc.ents
+        lst_entity = list(entity)
+        sentence= ""
+        for ele in lst_entity:
+            sentence = sentence + str(ele) + " "
         filtered_sentence.append(sentence)
     return filtered_sentence
-def retrive_data():
-    data = get_data.run()
+def get_data_loc():
+    initial_data_loc = fp.run("initial_data")
+    return initial_data_loc
+def retrive_data(initial_data_loc):
+    data = get_data.run(initial_data_loc)
     return data
 def get_feature(data):
     feature = data["display"]
     return feature
 def run():
-    data = retrive_data()
+    initial_data_loc = get_data_loc()
+    data = retrive_data(initial_data_loc)
     feature = get_feature(data)
     feature_list = list(feature)
     tokenized_features = stop_words_tokenizer(feature_list)
