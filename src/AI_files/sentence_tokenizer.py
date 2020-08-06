@@ -5,7 +5,7 @@ def get_file_path():
     results = fp.run("results")
     return results
 def fetch_recent_conversation(results):
-    
+    pass
 class sentence_tokenizer:
     def __init__(self):
         pass
