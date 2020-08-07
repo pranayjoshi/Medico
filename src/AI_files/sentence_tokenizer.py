@@ -1,13 +1,16 @@
 from spacy.lang.en import English
 import filepath as fp
-
+import sys
+sys.path.append('./src/Data_process')
+import fetch_recent_conv as frc
 def get_file_path():
     results = fp.run("results")
     return results
 def fetch_recent_conversation(results):
-    pass
+    recent_conversation = frc.run(results)
+    return recent_conversation
 class sentence_tokenizer:
-    def __init__(self):
+    def __init__(self, recent_conversation):
         pass
     def sentence_tokenizer(recent_conversation):
         nlp = English()
@@ -29,3 +32,7 @@ class sentence_tokenizer:
         for sent in doc.sents:
             sents_list.append(sent.text)
         print(sents_list)
+def run():
+    results = get_file_path()
+    recent_conversation = fetch_recent_conversation(results)
+    sentence_tokenize = sentence_tokenizer(recent_conversation)
