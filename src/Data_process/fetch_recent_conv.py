@@ -15,9 +15,11 @@ class Counter:
         fst_word = self.first_word
         del_first_word = self.last_line.strip(fst_word+" ")
         final_recent_conv = del_first_word
-        return final_recent_conv
+        self.final_recent_conv =  final_recent_conv
+    def result(self):
+        return self.final_recent_conv
 def run(results_loc):
     count = Counter(results_loc)
     count.last_line()
     count.extract_first_word()
-    return count.delete_first_word()
+    return count.result()
