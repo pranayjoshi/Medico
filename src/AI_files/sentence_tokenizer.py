@@ -12,7 +12,7 @@ def fetch_recent_conversation(results):
 class sentence_tokenizer:
     def __init__(self, recent_conversation):
         pass
-    def sentence_tokenizer(recent_conversation):
+    def sentence_tokenizer(self):
         nlp = English()
 
         # Create the pipeline 'sentencizer' component
