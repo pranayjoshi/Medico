@@ -11,7 +11,7 @@ def fetch_recent_conversation(results):
     return recent_conversation
 class sentence_tokenizer:
     def __init__(self, recent_conversation):
-        pass
+        self.recent
     def sentence_tokenizer(self):
         nlp = English()
 
