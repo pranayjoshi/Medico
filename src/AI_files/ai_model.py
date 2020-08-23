@@ -5,8 +5,7 @@ from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 import nltk
 from nltk.tokenize import word_tokenize
 import filepath as fp
-import sys
-sys.setrecursionlimit(1000)
+
 # CSV to DataFrame
 def get_file_path():
     doc2vec_loc = fp.run("doc2vec")

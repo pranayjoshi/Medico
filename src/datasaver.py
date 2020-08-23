@@ -30,4 +30,6 @@ try:
 except FileNotFoundError as fe:
     with open("mailing_list.json", "w+") as file:
         json.dump(dic, file)
-def"""
+"""
+def create_dictionary():
+    pass

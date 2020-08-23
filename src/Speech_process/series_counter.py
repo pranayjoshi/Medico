@@ -1,5 +1,6 @@
 import results_checker as rc
 import filepath as f_p
+
 #This will extract the first word from a line
 class Counter:
     def __init__(self, check, loc):

@@ -1,6 +1,7 @@
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 import nltk
 from nltk.tokenize import word_tokenize
+nltk.download('popular')
 from get_data import get_final_file_path, csv_to_df
 import sentence_tokenizer
 import sys

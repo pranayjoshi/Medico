@@ -6,5 +6,6 @@
     "tokenized_data": "./data/tokenized_data.csv",
     "initial_data": "./data/initial_data.csv",
     "main_data": "./data/main_data.csv",
-    "doc2vec": "./storage/doc2vec.model"
+    "doc2vec": "./storage/doc2vec.model",
+    "punctuator_model": "./src/AI_files/punctuator/Demo-Europarl-EN.pcl"
 }

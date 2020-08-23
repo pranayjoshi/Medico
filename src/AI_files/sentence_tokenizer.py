@@ -2,16 +2,17 @@ from spacy.lang.en import English
 import filepath as fp
 import sys
 sys.path.append('./src/Data_process')
-import fetch_recent_conv as frc
-def get_file_path():
-    results = fp.run("results")
-    return results
-def fetch_recent_conversation(results):
-    recent_conversation = frc.run(results)
+import punctuatorsrc as prc
+
+def fetch_recent_conversation():
+    recent_conversation = prc.run()
     return recent_conversation
+
 class sentence_tokenizer:
+
     def __init__(self, recent_conversation):
-        self.recent
+        self.recent_conversation = recent_conversation
+
     def sentence_tokenizer(self):
         nlp = English()
 
@@ -20,19 +21,31 @@ class sentence_tokenizer:
 
         # Add the component to the pipeline
         nlp.add_pipe(sbd)
-
-        text = """When learning data science, you shouldn't get discouraged!
-        Challenges and setbacks aren't failures, they're just part of the journey. You've got this!"""
+        nlp.add_pipe(set_custom_boundaries, before="sentencizer")
 
         #  "nlp" Object is used to create documents with linguistic annotations.
+        text = self.recent_conversation
         doc = nlp(text)
 
         # create list of sentence tokens
-        sents_list = []
+        sents_list = []      
         for sent in doc.sents:
             sents_list.append(sent.text)
-        print(sents_list)
+        return sents_list
+
+def set_custom_boundaries(doc):
+    for token in doc[:-1]:
+        if token.text in ("’s", "'s"):
+            doc[token.i].is_sent_start = False
+        if token.text in (",", ","):
+            doc[token.i].is_sent_start = True
+    return doc
+
 def run():
-    results = get_file_path()
-    recent_conversation = fetch_recent_conversation(results)
+    recent_conversation = fetch_recent_conversation()
     sentence_tokenize = sentence_tokenizer(recent_conversation)
+    sent_tokenize = sentence_tokenize.sentence_tokenizer()
+    return sent_tokenize
+
+if __name__ == "__main__":
+    print(run())

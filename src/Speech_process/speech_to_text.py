@@ -55,17 +55,23 @@ class speech_to_text:
 
 # this class will act as a test printer
 class test_printer:
+
     def __init__(self, actual):
         self.actual = actual
+
     def test_input(self):
         self.expected = "so after reading your report i came to know that you have been suffering from diarrhoea and here are some medicine for you crocin 650 paracetamol and Acetaminophen"
+
     def printer(self):
         out = (f"Actual: {self.actual}\nExpected: {self.expected}")
         return out   
+
 class run_utils:
-# returns the path required
+
+    # returns the path required
     def __init__(self, present_count):
         self.present_count = present_count
+
     def file_paths(self):
         with open("./storage/path.json", "r+") as file:       #for mailing system
             data = json.load(file)
@@ -93,6 +99,7 @@ class run_utils:
     
     def printer(self):
         return self.printer
+
 #this script will run all
 def run_all(present_count):
     r_utils = run_utils(present_count)
@@ -102,11 +109,13 @@ def run_all(present_count):
     r_utils.run_printer()
     printer = r_utils.printer()
     return printer
+
 # finally run the script
 def run():
     present_count = s_c.run()
     printer = run_all(present_count)
     print(printer)
+    
 if __name__ == "__main__":
     run()
     
