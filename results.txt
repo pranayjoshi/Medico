@@ -1,0 +1,5 @@
+SpeechRecognition
+pyttsx3
+pandas
+scispacy
+spacy
