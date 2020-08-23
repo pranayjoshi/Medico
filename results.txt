@@ -3,3 +3,8 @@ pyttsx3
 pandas
 scispacy
 spacy
+json
+punctuator
+os
+sys
+nltk
