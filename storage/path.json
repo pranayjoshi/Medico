@@ -7,5 +7,6 @@
     "initial_data": "./data/initial_data.csv",
     "main_data": "./data/main_data.csv",
     "doc2vec": "./storage/doc2vec.model",
-    "punctuator_model": "./src/AI_files/punctuator/Demo-Europarl-EN.pcl"
+    "punctuator_model": "./src/AI_files/punctuator/Demo-Europarl-EN.pcl",
+    "patient_data":"./storage/patient_data.json"
 }
