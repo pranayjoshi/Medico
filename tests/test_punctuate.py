@@ -12,4 +12,5 @@ def test():
     if punctuated_conv == expected_conv:
         print("Test Passed")
     print("Actual sentence: " + punctuated_conv + "    ---->   " + "Expected sentence: " + expected_conv)
-test()
+if __name__ == "__main__":
+    test()
