@@ -1,2 +1,3 @@
+# Start application
 echo "Starting application.... "
-python3 run.py
+python3 src/app.py
