@@ -3,7 +3,7 @@
   <img width="300" height="300" src="/img/medico_round.png">
 </p>
 
-**Medico:- Medico is a medical terms detection system via Speech Recognition.**
+**Medico:- Medico is a medical terms detection system via your Voice.**
 
 ## Long Description
 * A software that recognize medical terms
