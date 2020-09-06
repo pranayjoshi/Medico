@@ -22,8 +22,10 @@
 * Congratulations **Medico** has succesfully installed on your system.
 * To run the software use:- ```python3 run.py``` or ```python run.py``` based on your python version.
 * To run the tests use:- ```python3 RunTest.py``` or ```python RunTest.py``` based on your python version.
+
 ### For NIX Users
 * Run the following command to install the dependencies required:- ```./install.sh```
 * To run the software use:- ```./start.sh```.
 * To run the software use:- ```./runtest.sh```.
+
 ## Thank you
