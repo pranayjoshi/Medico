@@ -18,7 +18,7 @@
 * than run ``` cd Medico```
 
 ### Standard Method(Pip)
-* Just run the setup.py by ``` pip install requirements.txt ``` or ``` pip3 install requirements.txt``` depending on the pip version.
+* Just run the setup.py by ``` pip install -r requirements.txt ``` or ``` pip3 install -r requirements.txt``` depending on the pip version.
 * Congratulations **Medico** has succesfully installed on your system.
 * To run the software use:- ```python3 run.py``` or ```python run.py``` based on your python version.
 * To run the tests use:- ```python3 RunTests.py``` or ```python RunTests.py``` based on your python version.
