@@ -5,3 +5,4 @@ scispacy
 spacy
 punctuator
 nltk
+gensim
