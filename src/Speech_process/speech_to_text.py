@@ -59,11 +59,8 @@ class test_printer:
     def __init__(self, actual):
         self.actual = actual
 
-    def test_input(self):
-        self.expected = "so after reading your report i came to know that you have been suffering from diarrhoea and here are some medicine for you crocin 650 paracetamol and Acetaminophen"
-
     def printer(self):
-        out = (f"Actual: {self.actual}\nExpected: {self.expected}")
+        out = (f"You said: {self.actual}\n")
         return out   
 
 class run_utils:
@@ -94,7 +91,6 @@ class run_utils:
 
     def run_printer(self):
         tst_print = test_printer(self.output)
-        tst_print.test_input()
         self.printer = tst_print.printer
     
     def printer(self):
