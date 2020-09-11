@@ -39,8 +39,12 @@
 * To run the software use:- ```./runtest.sh```.
 * Start Conversing after you hear ``` I am ready for your command ```.
 
-# Long Description
+# Description
 * A software that recognize medical terms
 * Dataset used:- Snomed international(Sample)
+
+# Working.
+* Takes the **Medical Conversation**(Mainly between Doctor and Patient) as the input.
+* Use that Voice Conversation and Convert it to text using **Speech To Text**.
 
 ## Thank you
