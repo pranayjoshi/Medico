@@ -6,7 +6,7 @@
 **Medico:- Medico is a medical terms detection system via your Voice.**
 
 # Current stable versions
-[![Alt v1.0](https://img.shields.io/badge/release--1.0-ok-green.svg)](https://github.com/pranayjoshi/Medico/releases/tag/1.0)  ![licence](https://img.shields.io/github/license/mashape/apistatus.svg) [![stars](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fpranayjoshi%2FMedico)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fpranayjoshi%2FMedico)
+[![Alt v1.0](https://img.shields.io/badge/release--1.0-ok-green.svg)](https://github.com/pranayjoshi/Medico/releases/tag/1.0)  ![licence](https://img.shields.io/github/license/pranayjoshi/Medico) ![stars](https://img.shields.io/github/stars/pranayjoshi/Medico) ![forks](https://img.shields.io/github/forks/pranayjoshi/Medico) ![issues](https://img.shields.io/github/issues/pranayjoshi/Medico) [![tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fpranayjoshi%2FMedico)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fpranayjoshi%2FMedico)
 # Installation
 **Run these commands on Terminal/CMD/bash dpending on your OS**
 * run ``` git clone https://github.com/pranayjoshi/Medico```. This will clone the Repo to your local system.
