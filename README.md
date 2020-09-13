@@ -7,7 +7,7 @@
 
 # Current stable versions
 [![Alt v1.0](https://img.shields.io/badge/release--1.0-ok-green.svg)](https://github.com/pranayjoshi/Medico/releases/tag/1.0)  ![licence](https://img.shields.io/github/license/mashape/apistatus.svg)
-<a href='https://patreon.com/pranayjoshi'><img src='https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.herokuapp.com%2Fvlang%2Fpledges&style=for-the-badge' height='20'></a>
+<a href='https://patreon.com/pranayjoshi'><img src='https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.herokuapp.com%2Fpranayjoshi%2Fpledges&style=for-the-badge' height='25'></a>
 # Installation
 **Run these commands on Terminal/CMD/bash dpending on your OS**
 * run ``` git clone https://github.com/pranayjoshi/Medico```. This will clone the Repo to your local system.
