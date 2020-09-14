@@ -45,5 +45,8 @@
 # Working.
 * Takes the **Medical Conversation**(Mainly between Doctor and Patient) as the input.
 * Use that Voice Conversation and Convert it to text using **Speech To Text**.
+* Than the **fetch_recent.py** takes the file containg all the conversation and returns the latest conversation.
+* After that the **Punctuator Model** takes the latest conversation and does the **Magic**(adds the punctuations) to the conversation.
+* Than we use the **Punctuated Conversation** and the whole conversation/document gets divided into particular sentences, by the **Sentence Tokenizer Model**.
 
 ## Thank you
