@@ -48,5 +48,11 @@
 * Than the **fetch_recent.py** takes the file containg all the conversation and returns the latest conversation.
 * After that the **Punctuator Model** takes the latest conversation and does the **Magic**(adds the punctuations) to the conversation.
 * Than we use the **Punctuated Conversation** and the whole conversation/document gets divided into particular sentences, by the **Sentence Tokenizer Model**.
+* After that we use the **Tokenized Sentence**, and check them One by One wheter they are **Medical Sentences**(Contains Medical Terms) or not.
+* If they are considered Medical Statements than:-
+  * The **Medical Term Detection Model** starts. It Further divides those **Medical Sentences** into **100000+ Categories.**
+  * After that a **Printer Function** prints all the necessary details.
+* Otherwise the sentence is Skipped.
+* At Last a Final Report is printed, Displaying all the **Medical Terms** found in the **Whole Conversation.**
 
 ## Thank you
