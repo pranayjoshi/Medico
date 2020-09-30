@@ -1,4 +1,4 @@
-for f in $PWD
+for f in *;
 do
     git add $f
     git commit -m "initial commit"
